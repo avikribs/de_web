@@ -54,7 +54,7 @@ const Navigation = () => {
               <Database className="w-6 h-6 text-white" />
             </div>
             <div className="text-xl font-bold text-white hidden sm:block">Impressico Data Engineering</div>
-            <div className="text-lg font-bold text-white sm:hidden">DataEng</div>
+            <div className="text-lg font-bold text-white sm:hidden">Impressico Data Engineering</div>
           </motion.div>
 
           {/* Desktop Navigation */}

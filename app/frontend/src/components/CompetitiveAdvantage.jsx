@@ -193,7 +193,7 @@ const CompetitiveAdvantage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20"
+          className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20"
         >
           <div className="text-center">
             <div className="text-4xl font-bold text-accent-400 mb-2">98%</div>
@@ -207,10 +207,10 @@ const CompetitiveAdvantage = () => {
             <div className="text-4xl font-bold text-accent-400 mb-2">300%</div>
             <div className="text-gray-400">ROI Average</div>
           </div>
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="text-4xl font-bold text-accent-400 mb-2">0</div>
             <div className="text-gray-400">Security Incidents</div>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* CTA */}

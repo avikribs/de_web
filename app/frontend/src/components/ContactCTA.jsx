@@ -102,7 +102,7 @@ const ContactCTA = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="glass-dark rounded-3xl p-8 border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-8">Get Your Custom Proposal</h3>
+              <h3 className="text-2xl font-bold text-white mb-8">Get in Touch</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -212,23 +212,10 @@ const ContactCTA = () => {
                   type="submit"
                   className="w-full btn-primary group flex items-center justify-center"
                 >
-                  Get My Custom Proposal
+                  Send the mail
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>
-
-              {/* Benefits */}
-              <div className="mt-8 pt-8 border-t border-white/10">
-                <h4 className="text-lg font-semibold text-white mb-4">What You'll Get:</h4>
-                <div className="space-y-3">
-                  {benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-center text-sm">
-                      <CheckCircle className="w-4 h-4 text-accent-400 mr-3 flex-shrink-0" />
-                      <span className="text-gray-300">{benefit}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </motion.div>
 
