@@ -15,32 +15,16 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-dark-900/90 via-primary-900/80 to-dark-800/90"></div>
       </div> */}
 
-      {/* Animated Background Elements */}
+      {/* Modern Background Elements */}
       <div className="absolute inset-0">
-        <motion.div
-          animate={{ 
-            rotate: [0, 360],
-            scale: [1, 1.1, 1]
-          }}
-          transition={{ 
-            duration: 20, 
-            repeat: Infinity, 
-            ease: "linear" 
-          }}
-          className="absolute top-20 left-20 w-32 h-32 border-2 border-primary-400/30 rounded-full"
-        />
-        <motion.div
-          animate={{ 
-            rotate: [360, 0],
-            scale: [1, 1.2, 1]
-          }}
-          transition={{ 
-            duration: 25, 
-            repeat: Infinity, 
-            ease: "linear" 
-          }}
-          className="absolute bottom-32 right-32 w-24 h-24 border-2 border-accent-400/30 rounded-full"
-        />
+        {/* Subtle geometric patterns */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-5">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-accent-400 to-primary-400 rounded-full blur-3xl"></div>
+        </div>
+        
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
       </div>
 
       {/* Main Content */}
@@ -141,6 +125,14 @@ const HeroSection = () => {
             <div className="flex items-center space-x-2">
               <img src="/static_files/palantir.png" alt="Palantir" className="w-6 h-6 object-contain"/>
               <span className="text-sm font-medium">Palantir</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <img src="/static_files/google_cloud.png" alt="Google Cloud" className="w-6 h-6 object-contain"/>
+              <span className="text-sm font-medium">Google Cloud</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <img src="/static_files/snowflake.png" alt="Snowflake" className="w-6 h-6 object-contain"/>
+              <span className="text-sm font-medium">Snowflake</span>
             </div>
           </motion.div>
         </motion.div>
